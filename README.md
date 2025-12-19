@@ -17,9 +17,11 @@ Instalación rápida
 - Crear entorno: `python -m venv .venv`
 - Instalar deps: `.venv\\Scripts\\python -m pip install -r requirements.txt` (Windows)
 - Ejecutar CLI: `.venv\\Scripts\\python run.py chat --help`
+- Chat LangChain: `.venv\\Scripts\\python run.py lc-chat --help`
 
 Variables de entorno
 - `PROCEDURES_PDF_PATH`: ruta al PDF con los procedimientos. Por defecto apunta al PDF indicado por el usuario.
 
 Notas
 - El asistente puede operar con procedimientos extraídos de PDF o de texto plano. En CI y pruebas se usa un archivo de ejemplo para garantizar reproducibilidad.
+- El modo LangChain soporta chunking configurable y detección automática de `chunk_size` y `chunk_overlap` leyendo el documento de procedimientos. Usa BM25 por defecto; opcionalmente embeddings con FAISS (`--use-embeddings`).
