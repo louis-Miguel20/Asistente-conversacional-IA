@@ -1,7 +1,7 @@
 PY?=.venv\Scripts\python
 PIP?=.venv\Scripts\pip
 
-.PHONY: venv install test run clean
+.PHONY: venv install test clean
 
 venv:
 	python -m venv .venv
@@ -13,8 +13,7 @@ install:
 test:
 	$(PY) -m pytest -q
 
-run:
-	$(PY) run.py
+ 
 
 clean:
 	- rd /s /q .venv 2> NUL
