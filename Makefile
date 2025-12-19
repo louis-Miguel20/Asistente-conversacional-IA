@@ -14,7 +14,7 @@ test:
 	$(PY) -m pytest -q
 
 run:
-	$(PY) -m assistant.cli
+	$(PY) run.py
 
 clean:
 	- rd /s /q .venv 2> NUL
