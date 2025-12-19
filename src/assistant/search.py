@@ -20,12 +20,11 @@ class ProcedureAssistant:
             p_low = para.lower()
             score = sum(p_low.count(tok) for tok in tokens)
             # Boost por títulos o pasos
-            if re.search(r"(paso|procedimiento|objetivo|parte)\s+\d+", p_low):
+            if score > 0 and re.search(r"(paso|procedimiento|objetivo|parte)\s+\d+", p_low):
                 score += 1
             scores.append(score)
-        best_idx = max(range(len(scores)), key=lambda i: scores[i]) if scores else 0
-        best = self.paragraphs[best_idx]
-        if scores and scores[best_idx] > 0:
-            return best
+        if scores and max(scores) > 0:
+            best_idx = max(range(len(scores)), key=lambda i: scores[i])
+            return self.paragraphs[best_idx]
         # Fallback: primer párrafo como introducción
         return self.paragraphs[0]

@@ -1,0 +1,16 @@
+Objetivo
+Este documento describe los pasos para usar el asistente conversacional IA.
+
+Parte 1: Preparación
+- Crear entorno virtual y preparar dependencias.
+
+Parte 2: Uso del asistente
+- Iniciar la aplicación y realizar consultas.
+Paso 1: Abrir la sesión de chat.
+Paso 2: Formular la pregunta según el procedimiento.
+
+Parte 3: Pruebas
+- Ejecutar pytest para validar el funcionamiento.
+
+Parte 4: CI
+- Configurar pipeline para ejecutar pruebas automáticamente.
