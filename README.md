@@ -1,3 +1,4 @@
+[![CI](https://github.com/louis-Miguel20/Asistente-conversacional-IA/actions/workflows/ci.yml/badge.svg)](https://github.com/louis-Miguel20/Asistente-conversacional-IA/actions/workflows/ci.yml)
 # Asistente Conversacional RAG
 
 Este proyecto implementa un asistente conversacional avanzado basado en RAG (Retrieval Augmented Generation), diseñado para responder preguntas precisas sobre documentos técnicos cargados por el usuario.
