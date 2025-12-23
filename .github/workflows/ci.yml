@@ -26,14 +26,10 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         
-    - name: Lint with pylint
+    - name: Run Linting and Formatting Checks
       run: |
-        # Ejecuta pylint (no falla el build por warnings, igual que make lint)
+        # Ejecuta pylint y black en un solo paso
         python -m pylint src tests || true
-        
-    - name: Check formatting with Black
-      run: |
-        # Verifica formato (no falla el build si hay cambios pendientes, igual que make lint)
         python -m black --check src tests || true
         
     - name: Run tests with pytest
