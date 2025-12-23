@@ -28,7 +28,7 @@ El sistema expone una API REST construida con **FastAPI** y ofrece una interfaz 
 
 ### Frontend (HTML/CSS/JS)
 *   **Interfaz Nativa:** Sin frameworks pesados, solo HTML5, CSS3 moderno (Variables, Flexbox) y JavaScript ES6+.
-*   **Responsive:** Diseño adaptable a móviles y escritorio.
+*   **Responsive:** Diseño adaptable a móviles y  tambien a escritorio.
 *   **Interacción Real-time:** Comunicación asíncrona con la API mediante `fetch`.
 
 ---
