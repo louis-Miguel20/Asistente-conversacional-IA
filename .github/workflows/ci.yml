@@ -29,13 +29,13 @@ jobs:
     - name: Lint with pylint
       run: |
         # Ejecuta pylint (no falla el build por warnings, igual que make lint)
-        pylint src tests || true
+        python -m pylint src tests || true
         
     - name: Check formatting with Black
       run: |
         # Verifica formato (no falla el build si hay cambios pendientes, igual que make lint)
-        black --check src tests || true
+        python -m black --check src tests || true
         
     - name: Run tests with pytest
       run: |
-        pytest
+        python -m pytest
