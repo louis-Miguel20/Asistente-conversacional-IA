@@ -69,9 +69,9 @@ pip install -r requirements.txt
 ```
 
 **3. Configurar Variables de Entorno**
-Crea un archivo `.env` en la raíz del proyecto:
+ Ya se creó un archivo `.env` en la raíz del proyecto:
 ```env
-OPENAI_API_KEY=tu_clave_aqui
+OPENAI_API_KEY=con_una_clave_aqui
 OPENAI_MODEL=gpt-4o-mini
 CHUNK_SIZE=400
 CHUNK_OVERLAP=80
